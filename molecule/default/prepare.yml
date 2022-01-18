@@ -1,0 +1,23 @@
+---
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: true
+
+  roles:
+    - role: mullholland.repository_codereadybuilder
+      when:
+        - (ansible_distribution == "RedHat" and ansible_distribution_major_version == "8") or
+          (ansible_distribution == "CentOS" and ansible_distribution_major_version == "9")
+    - role: mullholland.repository_powertools
+      when:
+        - ansible_distribution in [ "CentOS", "Rocky", "AlmaLinux" ]
+        - ansible_distribution_major_version == "8"
+    - role: mullholland.repository_epel
+      when:
+        - (ansible_distribution == "Amazon" and
+          ansible_distribution_major_version == "2") or
+          (ansible_distribution in [ "RedHat", "CentOS", "Rocky", "AlmaLinux" ])
+    - role: mullholland.repository_rpmfusion
+      when:
+        - ansible_distribution == "Fedora"

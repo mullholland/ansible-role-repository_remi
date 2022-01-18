@@ -1,0 +1,58 @@
+---
+- name: Include distribution specific variables
+  include_vars: "{{ item }}"
+  with_first_found:
+    - '{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml'
+    - '{{ ansible_distribution }}.yml'
+    - '{{ ansible_os_family }}.yml'
+    - '{{ ansible_system }}.yml'
+    - 'default.yml'
+
+- name: Importing key
+  ansible.builtin.rpm_key:
+    key: "{{ item }}"
+    state: present
+  register: result
+  until: result is succeeded
+  retries: 5
+  delay: 10
+  with_items:
+    - "{{ repository_remi_key[ansible_distribution][ansible_distribution_major_version] }}"
+
+- name: Install REMI Repository
+  ansible.builtin.yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ repository_remi_package[ansible_distribution][ansible_distribution_major_version] }}"
+
+- name: "Enable REMI Repository"
+  community.general.ini_file:
+    path: "/etc/yum.repos.d/remi.repo"
+    section: "remi"
+    option: enabled
+    value: "1"
+    no_extra_spaces: true
+    mode: "0644"
+    create: false
+
+# See: https://github.com/ansible/ansible/issues/64852
+- block:
+
+    - name: Ensure dnf-plugins are installed on CentOS 8+.
+      yum:
+        name: dnf-plugins-core
+        state: present
+
+    - name: Enable DNF module for CentOS 8+.
+      shell: |
+        dnf module reset php
+        dnf module enable -y php:remi-{{ repository_remi_php_version }}
+      args:
+        warn: false
+      register: dnf_module_enable
+      changed_when: "'Nothing to do' not in dnf_module_enable.stdout"
+
+  when:
+    - ansible_os_family == 'RedHat'
+    - ansible_distribution_major_version | int >= 8
