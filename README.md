@@ -68,7 +68,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/m
 
 -   [centos7](https://hub.docker.com/r/mullholland/docker-molecule-centos7)
 -   [centos-stream8](https://hub.docker.com/r/mullholland/docker-molecule-centos-stream8)
--   [centos-stream9](https://hub.docker.com/r/mullholland/docker-molecule-centos-stream9)
 -   [ubi8](https://hub.docker.com/r/mullholland/docker-molecule-ubi8)
 -   [fedora34](https://hub.docker.com/r/mullholland/docker-molecule-fedora34)
 -   [fedora35](https://hub.docker.com/r/mullholland/docker-molecule-fedora35)
@@ -91,6 +90,7 @@ Some variations of the build matrix do not work. These are the variations and re
 |---------------------------|------------------------|
 | Ubuntu* | repo only supports RedHat/CentOS Server |
 | Debian* | repo only supports RedHat/CentOS Server |
+| centos-stream9 | FROm REMI WARNING: CentOS 9 is a development version, not ready for production. |
 
 
 If you find issues, please register them in [GitHub](https://github.com/mullholland/ansible-role-repository_remi/issues)

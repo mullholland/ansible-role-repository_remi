@@ -40,6 +40,8 @@ repository_remi_key:
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+    "9":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
   Rocky:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
