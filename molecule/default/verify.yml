@@ -38,7 +38,7 @@
 
   tasks:
     - name: SmokeTests
-      debug:
+      ansible.builtin.debug:
         msg:
           - "ansible_version => {{ansible_version}}"
           - "ansible_distribution => {{ ansible_distribution }}"
@@ -63,7 +63,7 @@
         state: present
 
     - name: Verify php version.
-      shell: php --version
+      ansible.builtin.shell: php --version
       args:
         warn: false
       register: molecule_php_version
