@@ -61,4 +61,4 @@ repository_remi_key:
     "35":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
     "36":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2022"
