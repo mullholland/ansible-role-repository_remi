@@ -28,6 +28,8 @@ repository_remi_package:
       - "https://rpms.remirepo.net/fedora/remi-release-34.rpm"
     "35":
       - "https://rpms.remirepo.net/fedora/remi-release-35.rpm"
+    "36":
+      - "https://rpms.remirepo.net/fedora/remi-release-36.rpm"
 
 repository_remi_key:
   RedHat:
@@ -57,4 +59,6 @@ repository_remi_key:
     "34":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
     "35":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
+    "36":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
