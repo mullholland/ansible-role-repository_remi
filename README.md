@@ -91,7 +91,7 @@ Some variations of the build matrix do not work. These are the variations and re
 |---------------------------|------------------------|
 | Ubuntu* | repo only supports RedHat/CentOS Server |
 | Debian* | repo only supports RedHat/CentOS Server |
-| centos-stream9 | FROm REMI WARNING: CentOS 9 is a development version, not ready for production. |
+| centos-stream9 | FROM REMI WARNING: CentOS 9 is a development version, not ready for production. |
 
 
 If you find issues, please register them in [GitHub](https://github.com/mullholland/ansible-role-repository_remi/issues)
