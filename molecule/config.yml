@@ -8,7 +8,7 @@ molecule_exceptions:
     reason: "FROM REMI WARNING: CentOS 9 is a development version, not ready for production."
 molecule_scenarios:
   - scenario: "default"
-    ansible: ["previous", "current", "development"]
+    ansible: ["previous", "current"]
     platforms:
       - "centos7"
       - "centos-stream8"
