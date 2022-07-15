@@ -2,7 +2,7 @@
 
 |GitHub|GitLab|
 |------|------|
-|[![github](https://github.com/mullholland/ansible-role-repository_remi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions)|[![gitlab](https://gitlab.com/mullholland/ansible-role-repository_remi/badges/master/pipeline.svg)](https://gitlab.com/mullholland/ansible-role-repository_remi)|[![quality](https://img.shields.io/ansible/quality/unset)](https://galaxy.ansible.com/mullholland/repository_remi)|
+|[![github](https://github.com/mullholland/ansible-role-repository_remi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions)|[![gitlab](https://gitlab.com/mullholland/ansible-role-repository_remi/badges/main/pipeline.svg)](https://gitlab.com/mullholland/ansible-role-repository_remi)|
 
 description
 
@@ -79,7 +79,6 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 
 -   The previous versions.
 -   The current version.
--   The [devel](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-devel-from-github-with-pip) version.
 
 
 
@@ -91,7 +90,7 @@ Some variations of the build matrix do not work. These are the variations and re
 |---------------------------|------------------------|
 | Ubuntu* | repo only supports RedHat/CentOS Server |
 | Debian* | repo only supports RedHat/CentOS Server |
-| centos-stream9 | FROm REMI WARNING: CentOS 9 is a development version, not ready for production. |
+| centos-stream9 | FROM REMI WARNING: CentOS 9 is a development version, not ready for production. |
 
 
 If you find issues, please register them in [GitHub](https://github.com/mullholland/ansible-role-repository_remi/issues)

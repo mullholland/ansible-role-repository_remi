@@ -5,10 +5,10 @@ molecule_exceptions:
   - variation: "Debian*"
     reason: "repo only supports RedHat/CentOS Server"
   - variation: "centos-stream9"
-    reason: "FROm REMI WARNING: CentOS 9 is a development version, not ready for production."
+    reason: "FROM REMI WARNING: CentOS 9 is a development version, not ready for production."
 molecule_scenarios:
   - scenario: "default"
-    ansible: ["previous", "current", "next"]
+    ansible: ["previous", "current"]
     platforms:
       - "centos7"
       - "centos-stream8"
