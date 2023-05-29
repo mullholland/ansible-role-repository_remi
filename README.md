@@ -1,5 +1,11 @@
 # [repository_remi](#repository_remi)
 
+**IMPORTANT**
+This role will no longer be updated. you can use [robertdebock/ansible-role-remi](https://github.com/robertdebock/ansible-role-remi) as an alternative.
+
+---
+
+
 |GitHub|GitLab|
 |------|------|
 |[![github](https://github.com/mullholland/ansible-role-repository_remi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions)|[![gitlab](https://gitlab.com/mullholland/ansible-role-repository_remi/badges/main/pipeline.svg)](https://gitlab.com/mullholland/ansible-role-repository_remi)|
