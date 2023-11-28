@@ -1,30 +1,14 @@
-# [repository_remi](#repository_remi)
-
-**IMPORTANT**
-This role will no longer be updated. you can use [robertdebock/ansible-role-remi](https://github.com/robertdebock/ansible-role-remi) as an alternative.
-
----
-
-
-|GitHub|GitLab|
-|------|------|
-|[![github](https://github.com/mullholland/ansible-role-repository_remi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions)|[![gitlab](https://gitlab.com/mullholland/ansible-role-repository_remi/badges/main/pipeline.svg)](https://gitlab.com/mullholland/ansible-role-repository_remi)|
+# [Ansible role repository_remi](#repository_remi)
 
 description
 
-## [Role Variables](#role-variables)
-
-These variables are set in `defaults/main.yml`:
-```yaml
----
-repository_remi_key_url: "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
-repository_remi_php_version: "8.1"
-```
-
-
+|GitHub|Downloads|Version|
+|------|---------|-------|
+|[![github](https://github.com/mullholland/ansible-role-repository_remi/actions/workflows/molecule.yml/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions/workflows/molecule.yml)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/mullholland/repository_remi)|[![Version](https://img.shields.io/github/release/mullholland/ansible-role-repository_remi.svg)](https://github.com/mullholland/ansible-role-repository_remi/releases/)|
 ## [Example Playbook](#example-playbook)
 
-This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
+This example is taken from [`molecule/default/converge.yml`](https://github.com/mullholland/ansible-role-repository_remi/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
+
 ```yaml
 ---
 - name: Converge
@@ -37,7 +21,8 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
     - role: "mullholland.repository_remi"
 ```
 
-The machine needs to be prepared in CI this is done using `molecule/default/prepare.yml`:
+The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/mullholland/ansible-role-repository_remi/blob/master/molecule/default/prepare.yml):
+
 ```yaml
 ---
 - name: Prepare
@@ -66,50 +51,50 @@ The machine needs to be prepared in CI this is done using `molecule/default/prep
 
 
 
+## [Role Variables](#role-variables)
 
+The default values for the variables are set in [`defaults/main.yml`](https://github.com/mullholland/ansible-role-repository_remi/blob/master/defaults/main.yml):
+
+```yaml
+---
+repository_remi_key_url: "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+repository_remi_php_version: "8.1"
+```
+
+## [Requirements](#requirements)
+
+- pip packages listed in [requirements.txt](https://github.com/mullholland/ansible-role-repository_remi/blob/master/requirements.txt).
+
+
+## [Context](#context)
+
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://mullholland.net) for further information.
+
+Here is an overview of related roles:
+![dependencies](https://raw.githubusercontent.com/mullholland/ansible-role-repository_remi/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
 This role has been tested on these [container images](https://hub.docker.com/u/mullholland):
 
--   [centos7](https://hub.docker.com/r/mullholland/docker-molecule-centos7)
--   [centos-stream8](https://hub.docker.com/r/mullholland/docker-molecule-centos-stream8)
--   [ubi8](https://hub.docker.com/r/mullholland/docker-molecule-ubi8)
--   [fedora35](https://hub.docker.com/r/mullholland/docker-molecule-fedora35)
--   [fedora36](https://hub.docker.com/r/mullholland/docker-molecule-fedora36)
--   [amazonlinux](https://hub.docker.com/r/mullholland/docker-molecule-amazonlinux)
--   [rockylinux8](https://hub.docker.com/r/mullholland/docker-molecule-rockylinux8)
--   [almalinux8](https://hub.docker.com/r/mullholland/docker-molecule-almalinux8)
+|container|tags|
+|---------|----|
+|[EL](https://hub.docker.com/r/mullholland/enterpriselinux)|all|
+|[Amazon](https://hub.docker.com/r/mullholland/amazonlinux)|Candidate|
+|[Fedora](https://hub.docker.com/r/mullholland/fedora/)|all|
 
 The minimum version of Ansible required is 2.10, tests have been done to:
 
--   The previous versions.
--   The current version.
+- The previous version.
+- The current version.
+- The development version.
 
-
-
-## [Exceptions](#exceptions)
-
-Some variations of the build matrix do not work. These are the variations and reasons why the build won't work:
-
-| variation                 | reason                 |
-|---------------------------|------------------------|
-| Ubuntu* | repo only supports RedHat/CentOS Server |
-| Debian* | repo only supports RedHat/CentOS Server |
-| centos-stream9 | FROM REMI WARNING: CentOS 9 is a development version, not ready for production. |
-
-
-If you find issues, please register them in [GitHub](https://github.com/mullholland/ansible-role-repository_remi/issues)
+If you find issues, please register them in [GitHub](https://github.com/mullholland/ansible-role-repository_remi/issues).
 
 ## [License](#license)
 
-MIT
-
+[MIT](https://github.com/mullholland/ansible-role-repository_remi/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
-[Mullholland](https://github.com/mullholland)
-
-## [Special Thanks](#special-thanks)
-
-Template inspired by [Robert de Bock](https://github.com/robertdebock)
+[Mullholland](https://mullholland.net)

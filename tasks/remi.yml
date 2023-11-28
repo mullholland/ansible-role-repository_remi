@@ -1,5 +1,5 @@
 ---
-- name: Include distribution specific variables
+- name: remi | Include distribution specific variables
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - '{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml'
@@ -8,7 +8,7 @@
     - '{{ ansible_system }}.yml'
     - 'default.yml'
 
-- name: Importing key
+- name: remi | Importing key
   ansible.builtin.rpm_key:
     key: "{{ item }}"
     state: present
@@ -19,14 +19,14 @@
   with_items:
     - "{{ repository_remi_key[ansible_distribution][ansible_distribution_major_version] }}"
 
-- name: Install REMI Repository
+- name: remi | Install REMI Repository
   ansible.builtin.yum:
     name: "{{ item }}"
     state: present
   with_items:
     - "{{ repository_remi_package[ansible_distribution][ansible_distribution_major_version] }}"
 
-- name: "Enable REMI Repository"
+- name: "remi | Enable REMI Repository"
   community.general.ini_file:
     path: "/etc/yum.repos.d/remi.repo"
     section: "remi"
@@ -37,15 +37,17 @@
     create: false
 
 # See: https://github.com/ansible/ansible/issues/64852
-- name: "RedHat/CentOS 8 | RedHat/CentOS 8 Switch (https://github.com/ansible/ansible/issues/64852)"
+- name: "remi | RedHat/CentOS 8 | RedHat/CentOS 8 Switch (https://github.com/ansible/ansible/issues/64852)"
+  when:
+    - ansible_os_family == 'RedHat'
+    - ansible_distribution_major_version | int >= 8
   block:
-
-    - name: Ensure dnf-plugins are installed on CentOS 8+.
+    - name: remi | Ensure dnf-plugins are installed on CentOS 8+.
       ansible.builtin.yum:
         name: dnf-plugins-core
         state: present
 
-    - name: Enable DNF module for CentOS 8+.
+    - name: remi | Enable DNF module for CentOS 8+.
       ansible.builtin.shell: |
         dnf module reset php
         dnf module enable -y php:remi-{{ repository_remi_php_version }}
@@ -53,7 +55,3 @@
         warn: false
       register: dnf_module_enable
       changed_when: "'Nothing to do' not in dnf_module_enable.stdout"
-
-  when:
-    - ansible_os_family == 'RedHat'
-    - ansible_distribution_major_version | int >= 8
