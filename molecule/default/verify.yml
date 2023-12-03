@@ -7,34 +7,7 @@
     molecule_repo_file: "remi.repo"
     molecule_repo_name: "remi"
     molecule_repo_packages:
-      - "base58"
       - "php"
-      # RedHat:
-      #   "7":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
-      #   "8":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
-      # CentOS:
-      #   "7":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
-      #   "8":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
-      # Rocky:
-      #   "8":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
-      # AlmaLinux:
-      #   "8":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
-      # Amazon:
-      #   "2":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
-      # Fedora:
-      #   "33":
-      #     - "base58"
-      #   "34":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
-      #   "35":
-      #     - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
 
   tasks:
     - name: SmokeTests
