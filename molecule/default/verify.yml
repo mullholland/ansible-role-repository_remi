@@ -64,7 +64,5 @@
 
     - name: Verify php version.
       ansible.builtin.command: php --version
-      args:
-        warn: false
       register: molecule_php_version
       changed_when: "'PHP 8.1' not in molecule_php_version.stdout"
