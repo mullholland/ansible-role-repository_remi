@@ -71,6 +71,6 @@ repository_remi_key:
     "37":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2022"
     "38":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2022"
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2023"
     "39":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2022"
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2023"
