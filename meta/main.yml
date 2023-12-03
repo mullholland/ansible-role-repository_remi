@@ -17,9 +17,9 @@ galaxy_info:
         - Candidate
     - name: Fedora
       versions:
-        - all
-        # - 34
-        # - 35
+        # - all
+        - "38"
+        - "39"
 
   galaxy_tags:
     - cloud
