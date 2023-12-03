@@ -4,7 +4,7 @@ description
 
 |GitHub|Downloads|Version|
 |------|---------|-------|
-|[![github](https://github.com/mullholland/ansible-role-repository_remi/actions/workflows/molecule.yml/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions/workflows/molecule.yml)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/mullholland/repository_remi)|[![Version](https://img.shields.io/github/release/mullholland/ansible-role-repository_remi.svg)](https://github.com/mullholland/ansible-role-repository_remi/releases/)|
+|[![github](https://github.com/mullholland/ansible-role-repository_remi/actions/workflows/molecule.yml/badge.svg)](https://github.com/mullholland/ansible-role-repository_remi/actions/workflows/molecule.yml)|[![downloads](https://img.shields.io/ansible/role/d/mullholland/repository_remi)](https://galaxy.ansible.com/mullholland/repository_remi)|[![Version](https://img.shields.io/github/release/mullholland/ansible-role-repository_remi.svg)](https://github.com/mullholland/ansible-role-repository_remi/releases/)|
 ## [Example Playbook](#example-playbook)
 
 This example is taken from [`molecule/default/converge.yml`](https://github.com/mullholland/ansible-role-repository_remi/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
@@ -57,7 +57,6 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 
 ```yaml
 ---
-repository_remi_key_url: "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
 repository_remi_php_version: "8.1"
 ```
 
