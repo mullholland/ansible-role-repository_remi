@@ -51,7 +51,5 @@
       ansible.builtin.shell: |
         dnf module reset php
         dnf module enable -y php:remi-{{ repository_remi_php_version }}
-      args:
-        warn: false
       register: dnf_module_enable
       changed_when: "'Nothing to do' not in dnf_module_enable.stdout"
