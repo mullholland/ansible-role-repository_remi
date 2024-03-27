@@ -55,6 +55,8 @@ repository_remi_key:
   Rocky:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+    "9":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
   AlmaLinux:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
