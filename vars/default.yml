@@ -15,9 +15,13 @@ repository_remi_package:
   Rocky:
     "8":
       - "https://rpms.remirepo.net/enterprise/remi-release-8.rpm"
+    "9":
+      - "https://rpms.remirepo.net/enterprise/remi-release-9.rpm"
   AlmaLinux:
     "8":
       - "https://rpms.remirepo.net/enterprise/remi-release-8.rpm"
+    "9":
+      - "https://rpms.remirepo.net/enterprise/remi-release-9.rpm"
   Amazon:
     "2":
       - "https://rpms.remirepo.net/enterprise/remi-release-7.rpm"
@@ -53,9 +57,13 @@ repository_remi_key:
   Rocky:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+    "9":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
   AlmaLinux:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+    "9":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
   Amazon:
     "2":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi"

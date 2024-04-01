@@ -12,14 +12,16 @@ galaxy_info:
     - name: EL
       versions:
         - all
+    - name: Rocky
+      versions:
+        - all
     - name: Amazon
       versions:
         - Candidate
     - name: Fedora
       versions:
-        # - all
-        - "38"
-        - "39"
+        - all
+
 
   galaxy_tags:
     - cloud
