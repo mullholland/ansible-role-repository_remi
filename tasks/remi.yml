@@ -20,7 +20,7 @@
     - "{{ repository_remi_key[ansible_distribution][ansible_distribution_major_version] }}"
 
 - name: remi | Install REMI Repository
-  ansible.builtin.yum:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   with_items:
@@ -43,7 +43,7 @@
     - ansible_distribution_major_version | int >= 8
   block:
     - name: remi | Ensure dnf-plugins are installed on CentOS 8+.
-      ansible.builtin.yum:
+      ansible.builtin.package:
         name: dnf-plugins-core
         state: present
 

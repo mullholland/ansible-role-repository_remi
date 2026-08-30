@@ -15,9 +15,9 @@ galaxy_info:
     - name: Rocky
       versions:
         - all
-    - name: Amazon
+    - name: AlmaLinux
       versions:
-        - Candidate
+        - all
     - name: Fedora
       versions:
         - all
