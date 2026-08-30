@@ -84,7 +84,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/m
 |[EL](https://hub.docker.com/r/mullholland/enterpriselinux)|all|
 |[Rocky](https://hub.docker.com/r/mullholland/rockylinux)|all|
 |[AlmaLinux](https://hub.docker.com/r/mullholland/almalinux)|all|
-|[Amazon](https://hub.docker.com/r/mullholland/amazonlinux)|all|
 |[Fedora](https://hub.docker.com/r/mullholland/fedora/)|all|
 |[CentOS](https://hub.docker.com/r/mullholland/centos)|all|
 

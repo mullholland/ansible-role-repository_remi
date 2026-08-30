@@ -12,34 +12,27 @@ repository_remi_package:
       - "https://rpms.remirepo.net/enterprise/remi-release-8.rpm"
     "9":
       - "https://rpms.remirepo.net/enterprise/remi-release-9.rpm"
+    "10":
+      - "https://rpms.remirepo.net/enterprise/remi-release-10.rpm"
   Rocky:
     "8":
       - "https://rpms.remirepo.net/enterprise/remi-release-8.rpm"
     "9":
       - "https://rpms.remirepo.net/enterprise/remi-release-9.rpm"
+    "10":
+      - "https://rpms.remirepo.net/enterprise/remi-release-10.rpm"
   AlmaLinux:
     "8":
       - "https://rpms.remirepo.net/enterprise/remi-release-8.rpm"
     "9":
       - "https://rpms.remirepo.net/enterprise/remi-release-9.rpm"
-  Amazon:
-    "2":
-      - "https://rpms.remirepo.net/enterprise/remi-release-7.rpm"
+    "10":
+      - "https://rpms.remirepo.net/enterprise/remi-release-10.rpm"
   Fedora:
-    "33":
-      - "https://rpms.remirepo.net/fedora/remi-release-33.rpm"
-    "34":
-      - "https://rpms.remirepo.net/fedora/remi-release-34.rpm"
-    "35":
-      - "https://rpms.remirepo.net/fedora/remi-release-35.rpm"
-    "36":
-      - "https://rpms.remirepo.net/fedora/remi-release-36.rpm"
-    "37":
-      - "https://rpms.remirepo.net/fedora/remi-release-37.rpm"
-    "38":
-      - "https://rpms.remirepo.net/fedora/remi-release-38.rpm"
-    "39":
-      - "https://rpms.remirepo.net/fedora/remi-release-39.rpm"
+    "42":
+      - "https://rpms.remirepo.net/fedora/remi-release-42.rpm"
+    "43":
+      - "https://rpms.remirepo.net/fedora/remi-release-43.rpm"
 
 repository_remi_key:
   RedHat:
@@ -54,31 +47,24 @@ repository_remi_key:
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
     "9":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
+    "10":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2024"
   Rocky:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
     "9":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
+    "10":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2024"
   AlmaLinux:
     "8":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
     "9":
       - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
-  Amazon:
-    "2":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi"
+    "10":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2024"
   Fedora:
-    "33":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2020"
-    "34":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
-    "35":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2021"
-    "36":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2022"
-    "37":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2022"
-    "38":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2023"
-    "39":
-      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2023"
+    "42":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2025"
+    "43":
+      - "https://rpms.remirepo.net/RPM-GPG-KEY-remi2025"
